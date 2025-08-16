@@ -3,8 +3,8 @@ class CircularQueueArray {
     private int[] queue;
     private int front;
     private int rear;
-    private int size;
     private int capacity;
+    int size;
 
     public CircularQueueArray(int capacity) {
         this.capacity = capacity;

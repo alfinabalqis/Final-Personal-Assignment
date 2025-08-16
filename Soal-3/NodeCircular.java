@@ -1,9 +1,9 @@
 // Node class untuk Circular Linked List
-class Node {
+class NodeCircular {
     int data;
-    Node next;
+    NodeCircular next;
 
-    public Node(int data) {
+    public NodeCircular(int data) {
         this.data = data;
         this.next = null;
     }

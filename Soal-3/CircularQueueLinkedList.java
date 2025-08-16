@@ -1,6 +1,6 @@
 class CircularQueueLinkedList {
-    private Node front;
-    private Node rear;
+    private NodeCircular front;
+    private NodeCircular rear;
     private int size;
 
     public CircularQueueLinkedList() {
@@ -14,7 +14,7 @@ class CircularQueueLinkedList {
     }
 
     public void enqueue(int item) {
-        Node newNode = new Node(item);
+        NodeCircular newNode = new NodeCircular(item);
         if (isEmpty()) {
             front = newNode;
         } else {
@@ -31,7 +31,7 @@ class CircularQueueLinkedList {
             return;
         }
         System.out.print("Circular Queue (Linked List): ");
-        Node current = front;
+        NodeCircular current = front;
         for (int i = 0; i < size; i++) {
             System.out.print(current.data + " ");
             current = current.next;
